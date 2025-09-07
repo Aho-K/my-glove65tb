@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: glove65tb}
 layers:
   DEFAULT:
-  - ESC
+  - LANG ZENKAKUHANKAKU
   - '1'
   - '2'
   - '3'
@@ -26,8 +26,8 @@ layers:
   - I
   - O
   - P
-  - \
-  - LEFT CONTROL
+  - '|'
+  - DEL
   - A
   - S
   - D
@@ -40,36 +40,36 @@ layers:
   - K
   - L
   - ;
-  - RETURN
+  - ':'
   - LEFT SHIFT
   - Z
   - X
   - C
   - V
   - B
-  - SCROLL
-  - B
+  - {t: '~', h: SCROLL}
+  - {t: B, h: NUM}
   - N
   - M
   - '&mkp LCLK'
   - '&mkp MCLK'
   - '&mkp RCLK'
   - RIGHT SHIFT
-  - SYM
-  - {t: ▽, type: trans}
-  - LEFT CONTROL
+  - LCTRL
+  - LEFT WIN
+  - {t: DELETE, h: MOUSE}
   - LEFT ALT
-  - LEFT GUI
-  - '&mkp LCLK'
-  - SPACE
-  - SPACE
-  - FUN
-  - '&mkp MB4'
-  - '&mkp MB5'
+  - {t: INT MUHENKAN, h: NUM}
+  - {t: SPACE, h: SYM}
+  - {t: INT HENKAN, h: FUN}
+  - BACKSPACE
+  - {t: ENTER, h: SYM}
+  - RIGHT ALT
+  - {t: RCTRL, h: NUM}
   NUM:
+  - ESC
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - KP NUM
   - /
   - '*'
   - '-'
@@ -78,7 +78,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - F5
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - KP 7
@@ -89,7 +89,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - UP ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -102,19 +102,19 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
+  - Ctl+W
+  - Ctl+Sft+T
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - KP 1
   - KP 2
   - KP 3
   - '='
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '|'
+  - {t: _, type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -128,8 +128,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Sft+Ctl+TAB
+  - Ctl+TAB
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   SYM:
@@ -187,12 +187,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -259,9 +259,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp RCLK'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   MOUSE:
@@ -321,7 +321,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
