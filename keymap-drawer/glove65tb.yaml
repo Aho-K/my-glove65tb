@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: glove65tb}
 layers:
   DEFAULT:
-  - LANG ZENKAKUHANKAKU
+  - F13
   - '1'
   - '2'
   - '3'
@@ -12,7 +12,7 @@ layers:
   - '8'
   - '9'
   - '0'
-  - BSPC
+  - KP MINUS
   - TAB
   - Q
   - W
@@ -68,15 +68,15 @@ layers:
   - {t: RCTRL, h: NUM}
   NUM:
   - ESC
-  - {t: ▽, type: trans}
-  - KP NUM
-  - /
-  - '*'
-  - '-'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Sft+1
+  - '"'
+  - '#'
+  - $
+  - '%'
+  - '&'
+  - ''''
+  - (
+  - )
   - {t: ▽, type: trans}
   - F5
   - {t: ▽, type: trans}
@@ -84,21 +84,21 @@ layers:
   - KP 7
   - KP 8
   - KP 9
-  - +
+  - /
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - R
   - UP ARROW
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - A
+  - F
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - KP 4
   - KP 5
   - KP 6
-  - +
+  - KP ASTERISK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -112,8 +112,8 @@ layers:
   - KP 1
   - KP 2
   - KP 3
-  - '='
-  - '|'
+  - +
+  - '~'
   - {t: _, type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -154,10 +154,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - R
+  - UP ARROW
+  - A
+  - F
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -168,11 +168,11 @@ layers:
   - '&ind_con'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
+  - Ctl+W
+  - Sft+Ctl+T
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -196,8 +196,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&mkp MB4'
+  - '&mkp MB5'
   FUN:
   - {t: ▽, type: trans}
   - F1
