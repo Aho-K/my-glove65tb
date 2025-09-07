@@ -57,7 +57,7 @@ layers:
   - RIGHT SHIFT
   - LCTRL
   - LEFT WIN
-  - {t: DELETE, h: MOUSE}
+  - {t: ^, h: MOUSE}
   - LEFT ALT
   - {t: INT MUHENKAN, h: NUM}
   - {t: SPACE, h: SYM}
