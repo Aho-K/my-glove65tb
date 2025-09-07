@@ -12,7 +12,7 @@ layers:
   - '8'
   - '9'
   - '0'
-  - KP MINUS
+  - '-'
   - TAB
   - Q
   - W
@@ -26,7 +26,7 @@ layers:
   - I
   - O
   - P
-  - '|'
+  - \
   - DEL
   - A
   - S
@@ -47,7 +47,7 @@ layers:
   - C
   - V
   - B
-  - {t: '~', h: SCROLL}
+  - {t: N, h: SCROLL}
   - {t: B, h: NUM}
   - N
   - M
@@ -68,16 +68,16 @@ layers:
   - {t: RCTRL, h: NUM}
   NUM:
   - ESC
-  - Sft+1
-  - '"'
+  - '!'
+  - '@'
   - '#'
   - $
   - '%'
+  - ^
   - '&'
-  - ''''
+  - '*'
   - (
   - )
-  - {t: ▽, type: trans}
   - F5
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -91,8 +91,8 @@ layers:
   - R
   - UP ARROW
   - A
-  - F
-  - {t: ▽, type: trans}
+  - '['
+  - ']'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - KP 4
@@ -117,9 +117,9 @@ layers:
   - {t: _, type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+C
+  - Ctl+X
+  - Ctl+V
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
