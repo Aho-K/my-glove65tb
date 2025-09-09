@@ -130,8 +130,8 @@ layers:
   - {t: ▽, type: trans}
   - Sft+Ctl+TAB
   - Ctl+TAB
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+Z
+  - Sft+Ctl+Z
   FNC:
   - {t: ▽, type: trans}
   - F1
