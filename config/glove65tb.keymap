@@ -94,7 +94,7 @@
 &trans   &trans    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_DIVIDE    &trans         &trans           &trans       &mkp MB4        &kp UP_ARROW           &mkp MB5         &kp RBKT    &kp BSLH
 &trans   &trans    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_ASTERISK  &trans         &trans           &trans       &kp LEFT_ARROW  &kp DOWN_ARROW         &kp RIGHT_ARROW  &kp LC(W)   &kp LC(LS(T))
 &trans   &trans    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_PLUS      &kp BACKSLASH  &kp NON_US_BSLH  &trans       &trans          &kp COMMA              &kp PERIOD       &kp SLASH   &kp NUBS
-&trans   &trans    &kp KP_NUMBER_0  &kp PERIOD       &trans           &trans           &trans         &kp LS(LC(TAB))  &kp LC(TAB)                                                          &trans      &trans
+&trans   &trans    &kp KP_NUMBER_0  &kp PERIOD       &trans           &trans           &trans         &kp LS(LC(TAB))  &kp LC(TAB)                                                          &kp LC(Z)   &kp LS(LC(Z))
             >;
         };
 
