@@ -78,7 +78,7 @@ layers:
   - Sft+"
   - '*'
   - Sft+9
-  - F5
+  - INT YEN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - KP 7
@@ -120,7 +120,7 @@ layers:
   - ','
   - .
   - /
-  - INT YEN
+  - INTERNATIONAL 1
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - KP 0
