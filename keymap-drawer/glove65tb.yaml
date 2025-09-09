@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: glove65tb}
 layers:
-  DEFAULT:
+  DFLT:
   - {t: F13, h: SNIPE}
   - '1'
   - '2'
@@ -26,7 +26,7 @@ layers:
   - I
   - O
   - P
-  - {t: \, h: SCROLL}
+  - {t: '[', h: SCROLL}
   - DEL
   - A
   - S
@@ -39,16 +39,16 @@ layers:
   - J
   - K
   - L
-  - {t: ;, h: FUN}
-  - {t: ':', h: SNIPE}
+  - {t: ;, h: FNC}
+  - {t: '*', h: SNIPE}
   - LEFT SHIFT
   - Z
   - X
   - C
   - V
   - B
-  - {t: +, h: SCROLL}
-  - {t: B, h: NUM}
+  - {t: ']', h: SCROLL}
+  - {t: \, h: NUM_US}
   - N
   - M
   - '&mkp LCLK'
@@ -59,25 +59,25 @@ layers:
   - LEFT WIN
   - {t: PRINTSCREEN, h: MOUSE}
   - LEFT ALT
-  - {t: INT MUHENKAN, h: NUM}
+  - {t: INT MUHENKAN, h: NUM_US}
   - {t: SPACE, h: SYM}
-  - {t: INT HENKAN, h: FUN}
+  - {t: INT HENKAN, h: FNC}
   - BACKSPACE
   - {t: ENTER, h: SYM}
   - RIGHT ALT
   - RCTRL
-  NUM:
+  NUM_US:
   - ESC
   - '!'
-  - '@'
+  - '['
   - '#'
   - $
   - '%'
+  - '='
   - ^
-  - '&'
+  - Sft+"
   - '*'
-  - (
-  - )
+  - Sft+9
   - F5
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -91,8 +91,8 @@ layers:
   - '&mkp MB4'
   - UP ARROW
   - '&mkp MB5'
-  - '['
   - ']'
+  - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - KP 4
@@ -113,14 +113,14 @@ layers:
   - KP 2
   - KP 3
   - KP PLUS
-  - ^
-  - {t: _, type: held}
+  - \
+  - {t: '|', type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - <
-  - '>'
-  - '?'
-  - {t: ▽, type: trans}
+  - ','
+  - .
+  - /
+  - NUBS
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - KP 0
@@ -132,73 +132,7 @@ layers:
   - Ctl+TAB
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  SYM:
-  - {t: ▽, type: trans}
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - BT CLR
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - R
-  - UP ARROW
-  - A
-  - F
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&ind_con'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LEFT ARROW
-  - DOWN ARROW
-  - RIGHT ARROW
-  - Ctl+W
-  - Sft+Ctl+T
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&ind_bat'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Ctl+C
-  - Ctl+X
-  - Ctl+V
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - Ctl+Sft+TAB
-  - Ctl+TAB
-  - Ctl+Z
-  - Sft+Ctl+Z
-  FUN:
+  FNC:
   - {t: ▽, type: trans}
   - F1
   - F2
@@ -233,12 +167,12 @@ layers:
   - {t: ▽, type: trans}
   - VOLUME UP
   - VOLUME UP
-  - {t: ▽, type: trans}
-  - LEFT ARROW
+  - Ctl+A
+  - A
   - DOWN ARROW
   - RIGHT ARROW
-  - {type: held}
-  - {t: ▽, type: trans}
+  - {t: Ctl+W, type: held}
+  - {t: Sft+Ctl+T, h: sticky}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -247,12 +181,12 @@ layers:
   - {t: ▽, type: trans}
   - VOLUME DOWN
   - VOLUME DOWN
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+F
+  - Ctl+D
+  - Ctl+C
+  - Ctl+X
+  - Ctl+V
+  - Ctl+S
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -262,6 +196,72 @@ layers:
   - {t: ▽, type: trans}
   - Sft+Ctl+TAB
   - {t: Ctl+TAB, h: toggle}
+  - Ctl+Z
+  - Sft+Ctl+Z
+  SYM:
+  - {t: ▽, type: trans}
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F
+  - R
+  - UP
+  - A
+  - P
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F
+  - R
+  - UP ARROW
+  - A
+  - P
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT
+  - DOWN
+  - RIGHT
+  - {t: ▽, type: trans}
+  - '&ind_con'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
+  - Ctl+W
+  - Sft+Ctl+T
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&ind_bat'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctl+C
+  - Ctl+X
+  - Ctl+V
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: BT CLR, type: held}
+  - {t: ▽, type: trans}
+  - Sft+Ctl+TAB
+  - Ctl+TAB
   - Ctl+Z
   - Sft+Ctl+Z
   MOUSE:
