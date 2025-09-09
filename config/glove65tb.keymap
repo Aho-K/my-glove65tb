@@ -51,7 +51,7 @@
 
         scroll {
             bindings = <&mo 5>;
-            key-positions = <49 50>;
+            key-positions = <50 51>;
         };
     };
 
