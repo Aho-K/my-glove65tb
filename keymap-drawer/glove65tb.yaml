@@ -529,5 +529,5 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [49, 50]
+- p: [50, 51]
   k: SCROLL
