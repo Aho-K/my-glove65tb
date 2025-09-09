@@ -9,6 +9,9 @@ config ZMK_SPLIT
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
+config ZMK_LOCALE_JAPANESE
+    default y
+
 endif
 
 if SHIELD_GLOVE65TB_L
@@ -17,6 +20,9 @@ config ZMK_KEYBOARD_NAME
     default "glove65tb_L"
 
 config ZMK_SPLIT
+    default y
+
+config ZMK_LOCALE_JAPANESE
     default y
 
 endif
