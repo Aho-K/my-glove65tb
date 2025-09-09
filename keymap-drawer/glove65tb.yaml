@@ -52,7 +52,7 @@ layers:
   - N
   - M
   - '&mkp LCLK'
-  - '&mkp MCLK'
+  - {t: '&mkp MB3', h: SYM}
   - '&mkp RCLK'
   - RIGHT SHIFT
   - LCTRL
