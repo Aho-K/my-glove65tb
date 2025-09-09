@@ -51,7 +51,7 @@
 
         scroll {
             bindings = <&mo 5>;
-            key-positions = <51>;
+            key-positions = <50 51>;
         };
     };
 
@@ -68,6 +68,14 @@
             bindings = <&msc>, <&msc>;
 
             tap-ms = <20>;
+        };
+
+        lt_mouse_layer: lt_mouse_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_TAP_MOUSE";
+            bindings = <&mo>, <&mkp>;
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
         };
     };
 
