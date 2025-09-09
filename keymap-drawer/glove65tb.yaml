@@ -39,8 +39,8 @@ layers:
   - J
   - K
   - L
-  - {t: ;, h: FNC}
-  - {t: '''', h: SNIPE}
+  - {t: ;, h: SYM}
+  - {t: '''', h: NUM_US}
   - LEFT SHIFT
   - Z
   - X
@@ -63,7 +63,7 @@ layers:
   - {t: SPACE, h: SYM}
   - {t: INT HENKAN, h: FNC}
   - BACKSPACE
-  - {t: ENTER, h: SYM}
+  - {t: ENTER, h: FNC}
   - RIGHT ALT
   - RCTRL
   NUM_US:
@@ -78,7 +78,7 @@ layers:
   - Sft+"
   - '*'
   - Sft+9
-  - INT YEN
+  - F5
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - KP 7
@@ -106,21 +106,21 @@ layers:
   - DOWN ARROW
   - RIGHT ARROW
   - Ctl+W
-  - Ctl+Sft+T
+  - {t: Ctl+Sft+T, type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - KP 1
   - KP 2
   - KP 3
   - KP PLUS
-  - {t: ▽, type: trans}
-  - {type: held}
+  - INT3
+  - INT1
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ','
   - .
   - /
-  - INTERNATIONAL 1
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - KP 0
@@ -168,11 +168,11 @@ layers:
   - VOLUME UP
   - VOLUME UP
   - Ctl+A
-  - A
+  - LEFT ARROW
   - DOWN ARROW
   - RIGHT ARROW
-  - {t: Ctl+W, type: held}
-  - {t: Sft+Ctl+T, h: sticky}
+  - Ctl+W
+  - Sft+Ctl+T
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -192,10 +192,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mkp RCLK'
   - {t: ▽, type: trans}
+  - {type: held}
   - Sft+Ctl+TAB
-  - {t: Ctl+TAB, h: toggle}
+  - Ctl+TAB
   - Ctl+Z
   - Sft+Ctl+Z
   SYM:
@@ -237,7 +237,7 @@ layers:
   - LEFT ARROW
   - DOWN ARROW
   - RIGHT ARROW
-  - Ctl+W
+  - {t: Ctl+W, type: held}
   - Sft+Ctl+T
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -258,7 +258,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: BT CLR, type: held}
+  - BT CLR
   - {t: ▽, type: trans}
   - Sft+Ctl+TAB
   - Ctl+TAB
@@ -501,15 +501,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -522,7 +514,15 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
