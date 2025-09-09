@@ -40,7 +40,7 @@ layers:
   - K
   - L
   - {t: ;, h: FNC}
-  - {t: '*', h: SNIPE}
+  - {t: '''', h: SNIPE}
   - LEFT SHIFT
   - Z
   - X
@@ -113,14 +113,14 @@ layers:
   - KP 2
   - KP 3
   - KP PLUS
-  - \
-  - {t: '|', type: held}
+  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ','
   - .
   - /
-  - NUBS
+  - INT YEN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - KP 0
