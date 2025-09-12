@@ -86,8 +86,8 @@
         default_layer {
             label = "DFLT";
             bindings = <
-&lt 2 F13       &kp N1        &kp N2             &kp N3        &kp N4              &kp N5                                        &kp N6       &kp N7  &kp N8     &kp N9                 &kp N0           &lt 4 MINUS
-&lt 3 TAB       &kp Q         &kp W              &kp E         &kp R               &kp T        &lt 3 Y           &lt 3 T        &kp Y        &kp U   &kp I      &kp O                  &kp P            &lt 2 LBKT
+&kp F13         &kp N1        &kp N2             &kp N3        &kp N4              &kp N5                                        &kp N6       &kp N7  &kp N8     &kp N9                 &kp N0           &lt 4 MINUS
+&kp TAB         &kp Q         &kp W              &kp E         &kp R               &kp T        &lt 3 Y           &lt 3 T        &kp Y        &kp U   &kp I      &kp O                  &kp P            &lt 2 LBKT
 &kp DEL         &kp A         &kp S              &kp D         &kp F               &kp G        &lt 2 H           &lt 2 G        &kp H        &kp J   &kp K      &kp L                  &lt 3 SEMICOLON  &lt 1 APOS
 &kp LEFT_SHIFT  &kp Z         &kp X              &kp C         &kp V               &kp B        &lt 1 N           &lt 1 B        &kp N        &kp M   &mkp LCLK  &lt_mouse_layer 5 MB3  &mkp RCLK        &kp RIGHT_SHIFT
 &kp LCTRL       &kp LEFT_WIN  &lt 4 PRINTSCREEN  &kp LEFT_ALT  &lt 1 INT_MUHENKAN  &lt 2 SPACE  &lt 3 INT_HENKAN  &kp BACKSPACE  &lt 2 ENTER                                            &kp RIGHT_ALT    &kp RCTRL
@@ -110,11 +110,11 @@
         function_layer {
             label = "FNC";
             bindings = <
-&trans  &kp F1  &kp F2          &kp F3          &kp F4           &kp F5                                        &kp F6       &kp F7          &kp F8          &kp F9           &kp F10    &kp F11
-&trans  &kp F   &kp R           &kp UP_ARROW    &kp A            &kp P   &kp C_VOLUME_DOWN  &kp K_MUTE         &kp F        &kp R           &kp UP_ARROW    &kp A            &kp P      &kp F12
-&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &kp C_VOLUME_UP    &kp C_VOLUME_UP    &kp LC(A)    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(W)  &kp LS(LC(T))
-&trans  &trans  &trans          &trans          &trans           &trans  &kp C_VOLUME_DOWN  &kp C_VOLUME_DOWN  &kp LC(F)    &kp LC(D)       &kp LC(C)       &kp LC(X)        &kp LC(V)  &kp LC(S)
-&trans  &trans  &trans          &trans          &trans           &trans  &trans             &kp LS(LC(TAB))    &kp LC(TAB)                                                   &mkp MB4   &mkp MB5
+&kp INT_KANA  &kp F1  &kp F2          &kp F3          &kp F4           &kp F5                                        &kp F6       &kp F7          &kp F8          &kp F9           &kp F10    &kp F11
+&trans        &kp F   &kp R           &kp UP_ARROW    &kp A            &kp P   &kp C_VOLUME_DOWN  &kp K_MUTE         &kp F        &kp R           &kp UP_ARROW    &kp A            &kp P      &kp F12
+&trans        &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &kp C_VOLUME_UP    &kp C_VOLUME_UP    &kp LC(A)    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(W)  &kp LS(LC(T))
+&trans        &trans  &trans          &trans          &trans           &trans  &kp C_VOLUME_DOWN  &kp C_VOLUME_DOWN  &kp LC(F)    &kp LC(D)       &kp LC(C)       &kp LC(X)        &kp LC(V)  &kp LC(S)
+&trans        &trans  &trans          &trans          &trans           &trans  &trans             &kp LS(LC(TAB))    &kp LC(TAB)                                                   &mkp MB4   &mkp MB5
             >;
 
             sensor-bindings = <&sensor_rotate_kp C_VOLUME_DOWN C_VOLUME_UP>;
