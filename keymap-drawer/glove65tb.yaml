@@ -91,8 +91,8 @@ layers:
   - '&mkp MB4'
   - UP ARROW
   - '&mkp MB5'
-  - ']'
-  - \
+  - '='
+  - '-'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - KP 4
@@ -133,7 +133,7 @@ layers:
   - Ctl+Z
   - Sft+Ctl+Z
   FNC:
-  - INT KANA
+  - INT2
   - F1
   - F2
   - F3
@@ -187,8 +187,8 @@ layers:
   - Ctl+X
   - Ctl+V
   - Ctl+S
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LANG ZENKAKUHANKAKU
+  - INT KATAKANAHIRAGANA
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
