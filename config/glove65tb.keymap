@@ -110,11 +110,11 @@
         function_layer {
             label = "FNC";
             bindings = <
-&kp INT2                 &kp F1                    &kp F2          &kp F3          &kp F4           &kp F5                                        &kp F6       &kp F7          &kp F8          &kp F9           &kp F10    &kp F11
-&trans                   &kp F                     &kp R           &kp UP_ARROW    &kp A            &kp P   &kp C_VOLUME_DOWN  &kp K_MUTE         &kp F        &kp R           &kp UP_ARROW    &kp A            &kp P      &kp F12
-&trans                   &trans                    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &kp C_VOLUME_UP    &kp C_VOLUME_UP    &kp LC(A)    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(W)  &kp LS(LC(T))
-&trans                   &trans                    &trans          &trans          &trans           &trans  &kp C_VOLUME_DOWN  &kp C_VOLUME_DOWN  &kp LC(F)    &kp LC(D)       &kp LC(C)       &kp LC(X)        &kp LC(V)  &kp LC(S)
-&kp LANG_ZENKAKUHANKAKU  &kp INT_KATAKANAHIRAGANA  &trans          &trans          &trans           &trans  &trans             &kp LS(LC(TAB))    &kp LC(TAB)                                                   &mkp MB4   &mkp MB5
+&kp INT2        &kp F1     &kp F2                   &kp F3                    &kp F4           &kp F5                                           &kp F6       &kp F7          &kp F8          &kp F9           &kp F10    &kp F11
+&trans          &kp F      &kp R                    &kp UP_ARROW              &kp A            &kp P      &kp C_VOLUME_DOWN  &kp K_MUTE         &kp F        &kp R           &kp UP_ARROW    &kp A            &kp P      &kp F12
+&trans          &trans     &kp LEFT_ARROW           &kp DOWN_ARROW            &kp RIGHT_ARROW  &trans     &kp C_VOLUME_UP    &kp C_VOLUME_UP    &kp LC(A)    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(W)  &kp LS(LC(T))
+&trans          &trans     &kp LANG9                &kp LANG8                 &kp LANG6        &kp LANG7  &kp C_VOLUME_DOWN  &kp C_VOLUME_DOWN  &kp LC(F)    &kp LC(D)       &kp LC(C)       &kp LC(X)        &kp LC(V)  &kp LC(S)
+&kp LANGUAGE_5  &kp LANG5  &kp LANG_ZENKAKUHANKAKU  &kp INT_KATAKANAHIRAGANA  &trans           &trans     &trans             &kp LS(LC(TAB))    &kp LC(TAB)                                                   &mkp MB4   &mkp MB5
             >;
 
             sensor-bindings = <&sensor_rotate_kp C_VOLUME_DOWN C_VOLUME_UP>;
