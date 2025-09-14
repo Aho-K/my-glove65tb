@@ -175,10 +175,10 @@ layers:
   - Sft+Ctl+T
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LANG9
+  - LANG8
+  - LANG6
+  - LANG7
   - VOLUME DOWN
   - VOLUME DOWN
   - Ctl+F
@@ -187,10 +187,10 @@ layers:
   - Ctl+X
   - Ctl+V
   - Ctl+S
+  - LANGUAGE 5
+  - LANG5
   - LANG ZENKAKUHANKAKU
   - INT KATAKANAHIRAGANA
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
