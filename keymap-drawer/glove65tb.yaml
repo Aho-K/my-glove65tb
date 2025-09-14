@@ -105,8 +105,8 @@ layers:
   - LEFT ARROW
   - DOWN ARROW
   - RIGHT ARROW
-  - Ctl+W
-  - {t: Ctl+Sft+T, type: held}
+  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - KP 1
