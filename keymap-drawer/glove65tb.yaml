@@ -64,7 +64,7 @@ layers:
   - {t: INT HENKAN, h: SYM}
   - BACKSPACE
   - {t: ENTER, h: FNC}
-  - RIGHT ALT
+  - {t: RIGHT ALT, h: NUM_US}
   - RCTRL
   NUM_US:
   - ESC
@@ -182,11 +182,11 @@ layers:
   - VOLUME DOWN
   - VOLUME DOWN
   - Ctl+F
-  - Ctl+D
+  - Ctl+S
   - Ctl+C
   - Ctl+X
   - Ctl+V
-  - Ctl+S
+  - {t: ▽, type: trans}
   - LANGUAGE 5
   - LANG5
   - LANG ZENKAKUHANKAKU

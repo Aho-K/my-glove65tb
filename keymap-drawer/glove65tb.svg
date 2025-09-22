@@ -433,9 +433,11 @@ path.combo {
 <g transform="translate(812, 280)" class="key keypos-63">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">RIGHT</tspan><tspan x="0" dy="1.2em">ALT</tspan>
+<tspan x="0" dy="-1.2em">RIGHT</tspan><tspan x="0" dy="1.2em">ALT</tspan>
 </text>
-</g>
+<a href="#NUM_US">
+<text x="0" y="24" class="key hold layer-activator">NUM_US</text>
+</a></g>
 <g transform="translate(868, 280)" class="key keypos-64">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">RCTRL</text>
@@ -987,7 +989,7 @@ path.combo {
 </g>
 <g transform="translate(644, 210)" class="key keypos-49">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">Ctl+D</text>
+<text x="0" y="0" class="key tap">Ctl+S</text>
 </g>
 <g transform="translate(700, 196)" class="key keypos-50">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1001,9 +1003,9 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">Ctl+V</text>
 </g>
-<g transform="translate(868, 224)" class="key keypos-53">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">Ctl+S</text>
+<g transform="translate(868, 224)" class="key trans keypos-53">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g transform="translate(28, 280)" class="key keypos-54">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
