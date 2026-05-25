@@ -18,6 +18,8 @@
 #define MOUSE   4
 #define SCROLL  5
 #define SNIPE   6
+#define ONEHAND 8
+#define MIRROR  9
 
 &mmv {
     delay-ms = <20>;
@@ -52,6 +54,11 @@
         scroll {
             bindings = <&mo 5>;
             key-positions = <50 51>;
+        };
+
+        toggle_onehand {
+            bindings = <&tog ONEHAND>;
+            key-positions = <63 64>;
         };
     };
 
@@ -170,6 +177,28 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans  &trans
+            >;
+        };
+
+        onehand_layer {
+            label = "ONEHAND";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                                    &trans  &trans  &trans  &trans  &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &lt MIRROR SPACE                                  &trans          &mt RCTRL ENTER
+            >;
+        };
+
+        mirror_layer {
+            label = "MIRROR";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp T   &kp R   &kp E   &kp W   &kp Q   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp G   &kp F   &kp D   &kp S   &kp A   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp B   &kp V   &kp C   &kp X   &kp Z   &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans  &trans
             >;
         };
