@@ -20,6 +20,7 @@
 #define SNIPE   6
 #define ONEHAND 8
 #define MIRROR  9
+#define NUMPAD  10
 
 &mmv {
     delay-ms = <20>;
@@ -59,6 +60,11 @@
         toggle_onehand {
             bindings = <&tog ONEHAND>;
             key-positions = <63 64>;
+        };
+
+        toggle_numpad {
+            bindings = <&tog NUMPAD>;
+            key-positions = <61 62>;
         };
     };
 
@@ -200,6 +206,17 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp G   &kp F   &kp D   &kp S   &kp A   &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp B   &kp V   &kp C   &kp X   &kp Z   &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans  &trans
+            >;
+        };
+
+        numpad_layer {
+            label = "NUMPAD";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp N7  &kp N8  &kp N9     &kp FSLH   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp N4  &kp N5  &kp N6     &kp STAR   &kp DOT
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp N1  &kp N2  &kp N3     &kp MINUS  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp N0                                  &kp PLUS   &trans
             >;
         };
     };
