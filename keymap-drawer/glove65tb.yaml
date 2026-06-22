@@ -59,9 +59,9 @@ layers:
   - LEFT WIN
   - {t: PRINTSCREEN, h: MOUSE}
   - LEFT ALT
-  - {t: INT MUHENKAN, h: NUM_US}
-  - {t: SPACE, h: FNC}
-  - {t: INT HENKAN, h: SYM}
+  - INT MUHENKAN
+  - SPACE
+  - INT HENKAN
   - BACKSPACE
   - {t: ENTER, h: FNC}
   - {t: RIGHT ALT, h: NUM_US}
@@ -540,7 +540,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - TAB
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -592,7 +592,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: SPACE, h: MIRROR}
-  - {t: ▽, type: trans}
+  - {t: TAB, h: LALT}
   - {t: ENTER, h: RCTRL}
   MIRROR:
   - {t: ▽, type: trans}
