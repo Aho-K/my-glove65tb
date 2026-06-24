@@ -209,9 +209,9 @@
             label = "MIRROR";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp T   &kp R   &kp E   &kp W   &kp Q   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp G   &kp F   &kp D   &kp S   &kp A   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp B   &kp V   &kp C   &kp X   &kp Z   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp Y   &kp T   &kp R   &kp E   &kp W   &kp Q   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp H   &kp G   &kp F   &kp D   &kp S   &kp A   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp N   &kp B   &kp V   &kp C   &kp X   &kp Z   &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans  &trans
             >;
         };
