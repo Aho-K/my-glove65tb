@@ -17,10 +17,12 @@
 #define FUN     3
 #define MOUSE   4
 #define SCROLL  5
-#define SNIPE   6
+#define GAME    6
 #define ONEHAND 8
 #define MIRROR  9
 #define NUMPAD  10
+#define SLOW    11
+#define FAST    12
 
 &mmv {
     delay-ms = <20>;
@@ -65,6 +67,11 @@
         toggle_numpad {
             bindings = <&tog NUMPAD>;
             key-positions = <61 62>;
+        };
+
+        toggle_game {
+            bindings = <&tog GAME>;
+            key-positions = <40 53>;
         };
     };
 
@@ -147,11 +154,11 @@
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans  &trans  &mo SLOW
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &mo FAST
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &trans
             >;
         };
 
@@ -166,14 +173,14 @@
             >;
         };
 
-        snipe_layer {
-            label = "SNIPE";
+        game_layer {
+            label = "GAME";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans    &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &kp W   &kp R     &kp ESC  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp A   &kp S   &kp D     &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp Z   &trans  &trans    &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp SPACE                                &kp C    &kp V
             >;
         };
 
@@ -217,6 +224,28 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp N4  &kp N5  &kp N6     &kp STAR   &kp DOT
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp N1  &kp N2  &kp N3     &kp MINUS  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp N0                                  &kp PLUS   &trans
+            >;
+        };
+
+        slow_layer {
+            label = "SLOW";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans  &trans
+            >;
+        };
+
+        fast_layer {
+            label = "FAST";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans  &trans
             >;
         };
     };

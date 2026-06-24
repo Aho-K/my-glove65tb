@@ -34,6 +34,16 @@
                 &zip_scroll_scaler 1 16                        // スクロール感度調整
             >;
         };
+
+        slow {
+            layers = <11>;                                     // SLOW レイヤー（精密モード）
+            input-processors = <&zip_xy_scaler 1 4>;           // 1/4倍感度
+        };
+
+        fast {
+            layers = <12>;                                     // FAST レイヤー（高速モード）
+            input-processors = <&zip_xy_scaler 2 1>;           // 2倍感度
+        };
     };
 };
 
