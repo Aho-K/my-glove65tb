@@ -232,7 +232,7 @@ layers:
   - RIGHT
   - {t: ▽, type: trans}
   - '&ind_con'
-  - {t: ▽, type: trans}
+  - '&ind_con'
   - {t: ▽, type: trans}
   - LEFT ARROW
   - DOWN ARROW
@@ -246,7 +246,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&ind_bat'
-  - {t: ▽, type: trans}
+  - '&ind_bat'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Ctl+C
@@ -447,8 +447,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Z
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - C
+  - V
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -460,8 +460,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - SPACE
-  - C
-  - V
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   '7':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
