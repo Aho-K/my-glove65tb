@@ -867,3 +867,5 @@ combos:
   k: {t: NUMPAD, h: toggle}
 - p: [40, 53]
   k: {t: GAME, h: toggle}
+- p: [54, 64]
+  k: '&ind_con'
