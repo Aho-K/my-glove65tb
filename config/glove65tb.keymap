@@ -73,6 +73,11 @@
             bindings = <&tog GAME>;
             key-positions = <40 53>;
         };
+
+        check_bt_connection {
+            bindings = <&ind_con>;
+            key-positions = <54 64>;
+        };
     };
 
     behaviors {
