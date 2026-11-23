@@ -38,10 +38,15 @@ jobs:
           name: drawings
           path: drawings
 
-      - name: Install rclone
-        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends rclone
+      - name: Install the PNG converter and rclone
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends librsvg2-bin fonts-liberation rclone
 
-      - name: Update the SVG in Google Drive
+      - name: Render the PNG from the generated SVG
+        run: |
+          rsvg-convert --background-color white --zoom 2 \
+            --output drawings/glove65tb.png drawings/glove65tb.svg
+
+      - name: Update the SVG and PNG in Google Drive
         env:
           KEYMAP_DRIVE_RCLONE_CONFIG: ${{ secrets.KEYMAP_DRIVE_RCLONE_CONFIG }}
           KEYMAP_DRIVE_FOLDER_ID: ${{ secrets.KEYMAP_DRIVE_FOLDER_ID }}
@@ -50,12 +55,12 @@ jobs:
             echo '::error::Set KEYMAP_DRIVE_RCLONE_CONFIG and KEYMAP_DRIVE_FOLDER_ID in Actions secrets.'
             exit 1
           fi
-          if [[ ! -s drawings/glove65tb.svg ]]; then
-            echo '::error::The draw job did not produce glove65tb.svg.'
+          if [[ ! -s drawings/glove65tb.svg || ! -s drawings/glove65tb.png ]]; then
+            echo '::error::Both keymap images must exist before uploading.'
             exit 1
           fi
           rclone_config=$(mktemp "$RUNNER_TEMP/keymap-rclone.XXXXXXXX.conf")
           trap 'unlink "$rclone_config"' EXIT
           printf '%s\n' "$KEYMAP_DRIVE_RCLONE_CONFIG" > "$rclone_config"
           rclone --config "$rclone_config" --drive-root-folder-id "$KEYMAP_DRIVE_FOLDER_ID" \
-            copyto --checksum drawings/glove65tb.svg keymap:glove65tb.svg
+            copy --checksum --include '/glove65tb.svg' --include '/glove65tb.png' drawings/ keymap:
