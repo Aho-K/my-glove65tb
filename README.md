@@ -28,6 +28,8 @@
 
 ![glove65tb.svg](keymap-drawer/glove65tb.svg)
 
+Google Driveにもキーマップ画像を保存する場合は、[自動アップロードの設定手順](docs/keymap-google-drive.md)を参照してください。
+
 # Docs<!-- omit in toc -->
 
 - [ZMKファームウェアをビルドしてキーマップを変更する](#zmkファームウェアをビルドしてキーマップを変更する)
