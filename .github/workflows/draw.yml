@@ -21,3 +21,46 @@ jobs:
       config_path: "keymap_drawer.config.yaml" # config file, ignored if not exists
       output_folder: "keymap-drawer"
       destination: "both"
+      artifact_name: drawings
+
+  upload-to-drive:
+    needs: draw
+    if: vars.KEYMAP_DRIVE_BRANCH != '' && github.ref == format('refs/heads/{0}', vars.KEYMAP_DRIVE_BRANCH)
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions: {}
+    concurrency:
+      group: keymap-google-drive
+    steps:
+      - name: Download the keymap from this run
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: drawings
+          path: drawings
+
+      - name: Install the PNG converter and rclone
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends librsvg2-bin fonts-liberation rclone
+
+      - name: Render the PNG from the generated SVG
+        run: |
+          rsvg-convert --background-color white --zoom 2 \
+            --output drawings/glove65tb.png drawings/glove65tb.svg
+
+      - name: Update the SVG and PNG in Google Drive
+        env:
+          KEYMAP_DRIVE_RCLONE_CONFIG: ${{ secrets.KEYMAP_DRIVE_RCLONE_CONFIG }}
+          KEYMAP_DRIVE_FOLDER_ID: ${{ secrets.KEYMAP_DRIVE_FOLDER_ID }}
+        run: |
+          if [[ -z "$KEYMAP_DRIVE_RCLONE_CONFIG" || ! "$KEYMAP_DRIVE_FOLDER_ID" =~ ^[A-Za-z0-9_-]+$ ]]; then
+            echo '::error::Set KEYMAP_DRIVE_RCLONE_CONFIG and KEYMAP_DRIVE_FOLDER_ID in Actions secrets.'
+            exit 1
+          fi
+          if [[ ! -s drawings/glove65tb.svg || ! -s drawings/glove65tb.png ]]; then
+            echo '::error::Both keymap images must exist before uploading.'
+            exit 1
+          fi
+          rclone_config=$(mktemp "$RUNNER_TEMP/keymap-rclone.XXXXXXXX.conf")
+          trap 'unlink "$rclone_config"' EXIT
+          printf '%s\n' "$KEYMAP_DRIVE_RCLONE_CONFIG" > "$rclone_config"
+          rclone --config "$rclone_config" --drive-root-folder-id "$KEYMAP_DRIVE_FOLDER_ID" \
+            copy --checksum --include '/glove65tb.svg' --include '/glove65tb.png' drawings/ keymap:
